@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "expo-react-native-starter",
+    "name": "Expo React Native Starter",
     "slug": "expo-react-native-starter",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -8,7 +8,8 @@
     "scheme": "exporeactnativestarter",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.celestelayne.expo-react-native-starter"
     },
     "android": {
       "adaptiveIcon": {
@@ -17,7 +18,8 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.celestelayne.exporeactnativestarter"
     },
     "web": {
       "output": "server",
@@ -37,6 +39,16 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
+      "eas": {
+        "projectId": "c3b50241-9752-420b-9cd2-f875eb832b3b"
+      }
     }
   }
 }
